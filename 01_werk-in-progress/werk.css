@@ -1,0 +1,14 @@
+body{
+    background: black;
+    width: 99%;
+    height: 100%;
+    font-size: 10px;
+}
+
+.werk{
+    color:white;
+    font-family: Muli;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20rem;
+}
