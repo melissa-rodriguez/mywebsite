@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cad.css">
+    
+    <!-- <link rel="shortcut icon" href="pics/bee1.png"> -->
+    <title>CAD | Melissa Rodriguez</title>
+</head>
+<body>
+    <hr class = "overline">
+    <h1 id = "header">CAD - 3D Modeling</h1>
+    
+    <div class = "Gyroscope">
+        <h1> <span class = "title">Gyroscope - </span>Bring it around town.</h1>
+        <img src="pics/gyro1.jpg" alt="Gyroscope 1">
+        <img class = "last-pic" src="pics/gyro2.jpg" alt="Gyroscope 2">
+        <p class = "date" >Sept. 2019</p>
+        <p> It's been about 3 years since I've used CREO Parametric as a 3D modeling tool so I was a little rusty at the beginning
+            of this project. Gyroscope was a fun way to incorporate revolves, the pattern tool, different constraint connections, and a servo motor analysis.
+            Initially, I had some trouble with the servo motor analysis; applying a gravity component would make the Gyroscope
+            fall flat on it's side and rotate in a way that was not physically possible. My mistake was forgetting to define materials for all parts.
+            An animation of the assembly in motion is coming soon.  </p>
+    </div>
+
+    <div class = "Slider">
+        <h1> <span class = "title">Slider - </span>It's electric.</h1>
+        <img src="pics/slider1.jpg" alt="Slider 1">
+        <img  class = "last-pic" src="pics/slider3.jpg" alt="Slider 2">   
+        <p class = "date">Sept. 2019</p>
+        <p> The slider game was a fun project to explore some in depth functionality of CREO such as repeating a part instead of creating 9 seperate
+            tile parts. This project also taught me about defining behaviors of parts by enabaling push upon collision to prevent the tiles from 
+             overlapping when moving them around the base. I used the boolean operation to cut the lighting bolt out of the tiles. The hardest part of
+            this model was deciding on the picture of the puzzle. How could I <span style="font-weight: 600;">not</span> make it the Electric Slide(r)?!
+            This is the first project I've made that will be brought to life. I'll be using a laser cutter
+            to create this wooden slider game!  
+        </p> 
+    </div>
+
+    <div class = "Slider">
+        <h1> <span class = "title">Geneva Cam</span></h1>
+        <img src="pics/geneva1.png" alt="Geneva Cam">
+        <img  class = "last-pic" src="pics/geneva2.png" alt="Geneva 2">   
+        <p class = "date">Oct. 2019</p>
+        <p> The Geneva Cam was an opportunity for me to learn how to create relations between dimensions on both a part and assembly level. I had difficulty grasping 
+            this concept in the beginning since creating features required referencing other features. After a while, I unsderstood how to assign relations while making
+            features or sketches. The most critical feature than can be changed within relations is the number of slots on the wheel. When creating the assembly, I had 
+            go into some of the parts to adjust the dimensions to allow for some clearence to prevent interference. 
+        </p> 
+    </div>
+
+    <div class = "Slider">
+        <h1> <span class = "title">Pumpkin - </span>Spooky Szn.</h1>
+        <img src="pics/pumpkin1.png" alt="Pumpkin1">
+        <img  class = "last-pic" src="pics/pumpkin2.png" alt="Pumpkin2">   
+        <p class = "date">Oct. 2019</p>
+        <p> I was experimenting with flexible modeling for this project. I played around with adjusting the resolution of the surface to manipulate the model in different
+            ways. In the beginning, it was difficult to select the surface an manipulate it without changing the oposite side. I had to take things slow and carefully adjust
+            the sections I wanted until the sphere looked pumpkin-like. To create the stem, I used the style tool to create a curve that resembled a pumpkin stem and created a 
+            sweep along the curve. The shape of the sweep is a star, I thought it resembled a stem more than a perfect circle. I used a skull image to create the sketch that 
+            would become the face of the Jack-O-Lantern. 
+        </p> 
+    </div>
+
+    <div class = "Slider">
+        <h1> <span class = "title">Endplate</span></h1>
+        <img src="pics/endplate1.png" alt="Endplate1">
+        <img  class = "last-pic" src="pics/endplate2.png" alt="Endplate2">   
+        <p class = "date">Nov. 2019</p>
+        <p> The endplate was modeled after a drawing. I was trying to incorporate the tolerance in the drawing into the 3D model. Then I re-drew the drawing on creo to get some
+            practice working with the GD&T tools.
+        </p> 
+    </div>
+
+    <div class = "Slider">
+        <h1> <span class = "title">Spirograph </span></h1>
+        <img src="pics/spiro1.png" alt="Slider 1">
+        <img  class = "last-pic" src="pics/spiro2.PNG" alt="Slider 2">   
+        <img  class = "last-pic" src="pics/spiro3.PNG" alt="Slider 2"> 
+        <p class = "date">Sept. 2019</p>
+        <p> To recreate a spirograph, I started by modeling a spur gear and ring gear. I used the relations tool once again to create appropriate dimensions for the gears; this was 
+            also helpful if I wanted to change the number of teeth on the gears. I used an online <a class = "link" href="http://www.beyondmech.com/pro-e/cad-topic-27.html" target = "_blank">tutorial</a> 
+            as a guide to create the spur gear. In order to show the path of the "pen" that moves as the spur gear travels along the ring gear, I created a datum point pattern on the spur
+            gear and ran a mechanism analysis on a given point. I played around with the number of teeth the ring gear and spur gear needed to have to create different patterns. 
+        </p> 
+    </div>
+
+    <!-- <h1 id = "footer"> Melissa Rodriguez</h1> -->
+
+</body>
+</html>
