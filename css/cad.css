@@ -1,0 +1,83 @@
+body{
+    /* border: 1px solid red; */
+
+    font-family: Open Sans;
+    color: black;
+    font-size: 12px;  
+    height: 80%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+hr.overline{
+    border-top: 1px solid black;
+}
+
+#header{
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    /* text-align: center; */
+}
+
+.Gyroscope img{
+    display: block;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.last-pic{
+    margin-top: 2rem;
+}   
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: 300;
+    margin-top: 3rem;
+}
+
+/* .Gyroscope p{
+    font-size: 1rem;
+} */
+
+.title{
+    font-weight: 600;
+}
+
+.date{
+    margin-top: 0;
+    color: gray;
+}
+
+
+/* .Slider h1{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    font-weight: 300;
+} */
+
+
+.Slider img{
+    width: 100%;
+    border: 1px solid gray;
+}
+
+/* .Slider p{
+    font-size: 1rem;
+} */
+
+.link{
+    color: black;
+    text-decoration: underline red;
+}
+
+#footer{
+    font-weight: 600;
+    margin-left: 9%;
+    margin-bottom: 5%;
+}
+
