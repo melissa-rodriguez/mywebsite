@@ -117,6 +117,7 @@
             flex: 100%;
             max-width: 100%;
         }
+        
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -142,7 +143,7 @@
             <h3 class="w3-center" style="font-size: xx-large;"><b>SPIROGRAPH</b></h3>
         <p class="w3-center"><em>Who says math can't be pretty?</em></p>
 
-        <p>To recreate a <a href="https://en.wikipedia.org/wiki/Spirograph" target="_blank">spirograph</a>, I started by modeling a spur gear and a ring gear. Using the relations tool, which allows you to create relationships between dimensions or variables (like the amount of teeth on a gear), was key to the success of this project. I followed a <a href="http://www.beyondmech.com/pro-e/cad-topic-27.html" target="_blank">tutorial</a> as a guide to create the spur gear. In order to show the path of the "pen" that moves as the spur gear travels along the ring gear, I created a datum point pattern on the spur gear and ran a mechanism analysis on a given point. I played around with the number of teeth on the ring and spur gear to create different patterns.</p>
+        <p>To recreate a <a href="https://en.wikipedia.org/wiki/Spirograph" target="_blank">spirograph</a>, I started by modeling a spur gear and a ring gear. Using the relations tool, which allows you to create relationships between dimensions or variables (like the number of teeth on a gear), was key to the success of this project. I followed a <a href="http://www.beyondmech.com/pro-e/cad-topic-27.html" target="_blank">tutorial</a> as a guide to create the spur gear. To show the path of the "pen" that moves as the spur gear travels along the ring gear, I created a datum point pattern on the spur gear and ran a mechanism analysis on a given point. I played around with the number of teeth on the ring and spur gear to create different patterns.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -184,7 +185,7 @@
         <h3 class="w3-center" style="font-size: xx-large;"><b>GENEVA</b></h3>
         <p class="w3-center"><em>Not the convention.</em></p>
 
-        <p>The <a href="https://en.wikipedia.org/wiki/Geneva_drive" target="_blank">Geneva Cam</a> was an opportunity for me to delve more deeply into the relations tool. This projects depended on relationships from both the part and the assembly level. I had difficulty grasping this concept in the beginning since creating features in the assembly required referencing features from multiple parts. After a while, I unsderstood how to assign relations while making features or sketches instead of trying to figure out the relationships after the part was complete. The most critical feature than can be changed within relations is the number of slots on the wheel. When creating the assembly, I had go into some of the parts to adjust the dimensions to allow for some clearence to prevent interference.</p>
+        <p>The <a href="https://en.wikipedia.org/wiki/Geneva_drive" target="_blank">Geneva Cam</a> was an opportunity for me to delve more deeply into the relations tool. This project depended on relationships from both the part and the assembly level. I had difficulty grasping this concept in the beginning since creating features in the assembly required referencing features from multiple parts. After a while, I unsderstood how to assign relations while making features or sketches instead of trying to figure out the relationships after the part was complete. The most critical feature than can be changed within relations is the number of slots on the wheel. When creating the assembly, I had to go into some of the parts to adjust the dimensions to allow for some clearance to prevent interference.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -204,7 +205,7 @@
         <h3 class="w3-center" style="font-size: xx-large;"><b>GYROSCOPE</b></h3>
         <p class="w3-center"><em>Bring it around town.</em></p>
 
-        <p>Gyroscope was a fun way to incorporate revolves, the pattern tool, different constraint connections, and a servo motor analysis. Initially, I had some trouble with the servo motor analysis; applying a gravity component would make the Gyroscope fall flat on it's side and rotate in a way that was not physically possible. My mistake was forgetting to define materials for all parts. I created an animation of the analysis but sadly, theres a bug in Creo that does not let you export animations.</p>
+        <p>Gyroscope was a fun way to incorporate revolves, the pattern tool, different constraint connections, and a servo motor analysis. Initially, I had some trouble with the servo motor analysis; applying a gravity component would make the Gyroscope fall flat on it's side and rotate in a way that was not physically possible. My mistake was forgetting to define materials for all parts. I created an animation of the analysis but sadly, there's a bug in Creo that does not let you export animations.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -242,7 +243,7 @@
         <h3 class="w3-center" style="font-size: xx-large;"><b>SLIDER</b></h3>
         <p class="w3-center"><em>It's electric.</em></p>
 
-        <p>The slider game was a fun project to explore some in depth functionality of Creo. I played around with part repetition which allowed me to repeat a single part instead of creating 9 seperate tile parts. This project also taught me about defining part behavior by enabaling push upon collision to prevent the tiles from overlapping when moving them around the base. I used the boolean operation to cut the lightning bolt out of the tiles. I chose a lightning bolt for the image because, well, <a href="https://www.youtube.com/watch?v=5jBkoEM0SSE" target="_blank">you know</a>. This is the first project I've made that will be brought to life. I'll be using a laser cutter to create this wooden slider game!</p>
+        <p>The slider game was a fun project to explore some in depth functionality of Creo. I played around with part repetition which allowed me to repeat a single part instead of creating 9 separate tile parts. This project also taught me about defining part behavior by enabling push upon collision to prevent the tiles from overlapping when moving them around the base. I used the boolean operation to cut the lightning bolt out of the tiles. I chose a lightning bolt for the image because, well, <a href="https://www.youtube.com/watch?v=5jBkoEM0SSE" target="_blank">you know</a>. This is the first project I've made that will be brought to life. I'll be using a laser cutter to create this wooden slider game!</p>
 
         <div class="w3-row">
             <div class="row">
