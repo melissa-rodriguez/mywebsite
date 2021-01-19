@@ -140,19 +140,16 @@
     <div class="w3-content w3-container w3-padding-64" id="about">
         <h3 class="w3-center" style="font-size: xx-large;"><b>DOOFENSHMIRTZ DIALOG DATA</b></h3>
         <p class="w3-center"><em>A Visualization</em></p>
+
+        <p class="w3-center"><a href="https://github.com/melissa-rodriguez/doof_visualization" target="_blank" class="w3-center w3-button w3-blue"><i class="w3-margin-center"></i>View Repository</a></p>  
+
+        
         <p> The structure of TV storytelling typically follows a predictable format: the main characters finding a new
             problem they must resolve in a new way. The structure of the show Phineas & Ferb is a bit more specific. The
             main
             characters (Phineas and Ferb) figure out what they're going to invent that day. Their sister, Candace, tries
             (and fails) to bust them. All the while their pet platypus who doubles as a secret agent is deterring Dr.
-            Heinz Doofenshmirtz latest evil scheme. Because of this strict pattern, a lot of the dialog is repetitive.
-            <br>
-            <br>
-            I'm a fan of the show so I'm familiar with the most repeated phrases. While every character usually has a
-            catch phrase, I thought Doofenshmirtz was not only the most complex character, but also the character with
-            the most dialog repetition. I wanted to visually represent the most common phrases or words I've heard him
-            say on the show. Plus, I liked the idea of deconstructing a self-described villain/evil scientist even
-            though he's very much his own worst enemy and possibly the worst villain of all time.
+            Heinz Doofenshmirtz latest evil scheme. Because of this strict pattern, a lot of the dialog is repetitive. Conceptually I wanted to explore how much of what we say makes up who we are. To execute this, my goal was to visualize the most common phrases/words used by the "villain" of the show, Dr. Heinz Doofenshmirtz.
         </p>
         <div class="w3-row">
             <div class="row">
@@ -161,16 +158,31 @@
                     <p class="caption">Fig 01. - Silhouette of Doofenshmirtz.</p>
 
                     <img src="process/v1.jpg">
-                    <p class="caption">Fig 02. - Rasterized image, base of particle system.</p>
+                    <p class="caption">Fig 02. - Rasterized image became the base of the particle system.</p>
 
-                    <p>Conceptually I wanted to explore how much of what we say makes up who we are. Doofenshmirtz
-                        heavily identifies with being evil and taking over the tri-state area, but on a deeper level he
-                        just wants to be heard, understood, and accepted. He figuratively and literally lights up the
-                        most when talking with or about Perry the Platypus.
+                    <p> 
+                        <!-- <b>Filters</b>
+                        <br>
+                        Enabling a filter highlights each line that contains that key phrase. 
+                        <br>
+                        <b>Behold, the Inators:</b>
+                        Most of Doofenshmirtz' evil schemes involve an "-inator" (e.g., Media-Erase-inator, Other-Dimension-inator, or Shrink-inator). They're devices that serve as a means of dominating the Tri-State Area. 
+                        <br>
+                        <b>Perry the Platypus:</b>
+                        Doofenshmirtz' arch nemesis. 
+                        <br>
+                        <b>Try-State Takeover:</b>
+                        His ultimate goal is to take over the Tri-State area. 
+                        <br>
+                        <b>Evil:</b>
+                        He self-identifies as evil. 
+                        <br> -->
+                        I first had to parse through the script data and extract only the lines said by Doof. For testing purposes, I lit each particle that had a line successfully associated with it, green. 
+                        Selecting a filter, highlights each particle that contains a line with that key phrase. Most of Doofenshmirtz' evil schemes involve an "-inator" (e.g., Media-Erase-inator, Other-Dimension-inator, or Shrink-inator). They are devices that serve as a means of accomplishing his main goal, dominating the Tri-State Area. Perry the Platypus is his arch nemesis and typically foils Doof's plans. 'Evil' is the characteristic Heinz most identifies with and as such, he brings up the word a lot. 
 
-                        The other filters I included were for mentions of his inators, taking over the tri state area,
-                        and evil. I really wanted to include a filter for his tragic backstories which usually explain
-                        the motive for his scheme of the day, but there was no standard pattern of dialog to setup his
+                        <br>
+                        <br>
+                        I really wanted to include a filter for his tragic backstories which are often linked to his reason for building the inators. Unfortunately, there was no standard pattern of dialog to setup his
                         backstories. Most of his backstories involve mentions of his childhood or his parents (emotional
                         trauma starts in childhood, even for cartoons), but the results were inconsistent. Not every
                         mention of childhood is linked to a backstory.
@@ -182,12 +194,10 @@
                     <img src="process/v6.png">
                     <p class="caption">Fig 04. - Highlighting filtered dialog based on key phrases or words.</p>
 
-                    <p>I wanted to add something visually engaging other than just lighting up different particles. I
-                        thought incorporating steering behavior to the particles was a great opportunity to "destroy"
+                    <p>As I wrapped up the project, I thought about adding something visually engaging other than just lighting up different particles. I
+                        thought incorporating a steering behavior to the particles was a great opportunity to "destroy"
                         the visualization. The self destruct button is a nod to the self destruct button found of many
-                        of Doofenshmirtz' inators. It's typically the reason behind many of his failed schemes and
-                        despite this fact, he keeps putting them on his inventions. Like I said, he's his own worst
-                        enemy.</p>
+                        of Doofenshmirtz' inators. It's typically the reason behind many of his failed schemes.</p>
                 </div>
                 <div class="vid">
                     <video autoplay loop muted playsinline>
@@ -211,9 +221,9 @@
                     words/phrases I want to filter for. I also should have been a bit more thoughtful about the
                     resolution of the system (amount of particles) and the screen size. I prototyped the entire project
                     with a full screen canvas but I think at smaller sizes, the number of particles is less than the
-                    amount of lines Doofenshmirtz has which cuts off some of the data. Overall, this was a fun project
+                    amount of lines that Doofenshmirtz has, which cuts off some of the data. Overall, this was a fun project
                     to dip my toes into the world of data visualization and hope to continue exploring with more complex
-                    data sets. The repository for this project can be found <a href="https://github.com/melissa-rodriguez/doof_visualization">here</a>.
+                    data sets.
                 </p>
             </div>
         </div>
@@ -224,7 +234,7 @@
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-        <a href="files/resume.pdf" target="_blank" class="w3-button w3-light-grey"><i class="w3-margin-center"></i>My Resume</a>
+        <a href="files/resume.pdf" target="_blank" class="w3-button w3-light-grey"><i class="w3-margin-center"></i>Resumè</a>
         <div class="w3-xlarge w3-section">
             <a href="https://www.instagram.com/hellomelissarodriguez/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
             <a href="https://twitter.com/hellomelissarod" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Engineering</title>
-<link rel="shortcut icon" type="image/svg" href="icon1.svg"/>
+<link rel="shortcut icon" type="image/svg" href="icon1.svg" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -117,7 +117,7 @@
             flex: 100%;
             max-width: 100%;
         }
-        
+
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
@@ -131,19 +131,27 @@
 
 <body>
     <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container " id="home">
+    <div class="bgimg-1 w3-display-container" id="home">
         <div class="w3-display-middle" style="white-space:nowrap;">
-            <span class="w3-center w3-padding-large w3-black w3-xxlarge w3-wide w3-animate-opacity">COMPUTER AIDED
-                DESIGN</span>
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span
+                    class="w3-hide-small">COMPUTER AIDED DESIGN</span>
+                <span class="w3-hide-large w3-hide-medium">CAD</span></span>
         </div>
     </div>
 
     <!-- Container (Robotics Section) -->
     <div class="w3-content w3-container w3-padding-64" id="about">
-            <h3 class="w3-center" style="font-size: xx-large;"><b>SPIROGRAPH</b></h3>
+        <h3 class="w3-center" style="font-size: xx-large;"><b>SPIROGRAPH</b></h3>
         <p class="w3-center"><em>Who says math can't be pretty?</em></p>
 
-        <p>To recreate a <a href="https://en.wikipedia.org/wiki/Spirograph" target="_blank">spirograph</a>, I started by modeling a spur gear and a ring gear. Using the relations tool, which allows you to create relationships between dimensions or variables (like the number of teeth on a gear), was key to the success of this project. I followed a <a href="http://www.beyondmech.com/pro-e/cad-topic-27.html" target="_blank">tutorial</a> as a guide to create the spur gear. To show the path of the "pen" that moves as the spur gear travels along the ring gear, I created a datum point pattern on the spur gear and ran a mechanism analysis on a given point. I played around with the number of teeth on the ring and spur gear to create different patterns.</p>
+        <p>To recreate a <a href="https://en.wikipedia.org/wiki/Spirograph" target="_blank">spirograph</a>, I started by
+            modeling a spur gear and a ring gear. Using the relations tool, which allows you to create relationships
+            between dimensions or variables (like the number of teeth on a gear), was key to the success of this
+            project. I followed a <a href="http://www.beyondmech.com/pro-e/cad-topic-27.html"
+                target="_blank">tutorial</a> as a guide to create the spur gear. To show the path of the "pen" that
+            moves as the spur gear travels along the ring gear, I created a datum point pattern on the spur gear and ran
+            a mechanism analysis on a given point. I played around with the number of teeth on the ring and spur gear to
+            create different patterns.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -165,7 +173,9 @@
         <h3 class="w3-center" style="font-size: xx-large;"><b>ENDPLATE</b></h3>
         <p class="w3-center"><em>Practicing tolerance.</em></p>
 
-        <p>I used an old textbook drawing to model this endplate. I was trying to incorporate the tolerance specified in the drawing to the 3D model. I then re-drew the drawing on the modeling software I was using (Creo Parametric) to get some practice working with the GD&T tools.</p>
+        <p>I used an old textbook drawing to model this endplate. I was trying to incorporate the tolerance specified in
+            the drawing to the 3D model. I then re-drew the drawing on the modeling software I was using (Creo
+            Parametric) to get some practice working with the GD&T tools.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -182,10 +192,17 @@
         <br>
         <br>
 
-        <h3 class="w3-center" style="font-size: xx-large;"><b>GENEVA</b></h3>
-        <p class="w3-center"><em>Not the convention.</em></p>
+        <h3 class="w3-center" style="font-size: xx-large;"><b>GENEVA CAM</b></h3>
+        <p class="w3-center"></p>
 
-        <p>The <a href="https://en.wikipedia.org/wiki/Geneva_drive" target="_blank">Geneva Cam</a> was an opportunity for me to delve more deeply into the relations tool. This project depended on relationships from both the part and the assembly level. I had difficulty grasping this concept in the beginning since creating features in the assembly required referencing features from multiple parts. After a while, I unsderstood how to assign relations while making features or sketches instead of trying to figure out the relationships after the part was complete. The most critical feature than can be changed within relations is the number of slots on the wheel. When creating the assembly, I had to go into some of the parts to adjust the dimensions to allow for some clearance to prevent interference.</p>
+        <p>The <a href="https://en.wikipedia.org/wiki/Geneva_drive" target="_blank">Geneva Cam</a> was an opportunity
+            for me to delve more deeply into the relations tool. This project depended on relationships from both the
+            part and the assembly level. I had difficulty grasping this concept in the beginning since creating features
+            in the assembly required referencing features from multiple parts. After a while, I unsderstood how to
+            assign relations while making features or sketches instead of trying to figure out the relationships after
+            the part was complete. The most critical feature than can be changed within relations is the number of slots
+            on the wheel. When creating the assembly, I had to go into some of the parts to adjust the dimensions to
+            allow for some clearance to prevent interference.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -203,9 +220,13 @@
         <br>
 
         <h3 class="w3-center" style="font-size: xx-large;"><b>GYROSCOPE</b></h3>
-        <p class="w3-center"><em>Bring it around town.</em></p>
+        <p class="w3-center"></p>
 
-        <p>Gyroscope was a fun way to incorporate revolves, the pattern tool, different constraint connections, and a servo motor analysis. Initially, I had some trouble with the servo motor analysis; applying a gravity component would make the Gyroscope fall flat on it's side and rotate in a way that was not physically possible. My mistake was forgetting to define materials for all parts. I created an animation of the analysis but sadly, there's a bug in Creo that does not let you export animations.</p>
+        <p>Gyroscope was a fun way to incorporate revolves, the pattern tool, different constraint connections, and a
+            servo motor analysis. Initially, I had some trouble with the servo motor analysis; applying a gravity
+            component would make the Gyroscope fall flat on it's side and rotate in a way that was not physically
+            possible. My mistake was forgetting to define materials for all parts. I created an animation of the
+            analysis but sadly, there's a bug in Creo that does not let you export animations.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -223,7 +244,15 @@
         <h3 class="w3-center" style="font-size: xx-large;"><b>JACK-O'-LANTERN</b></h3>
         <p class="w3-center"><em>Oh my gourd!</em></p>
 
-        <p>I was experimenting with flexible/free modeling for this project. I played around with adjusting the resolution of the surface to manipulate the model in different ways. In the beginning, it was difficult to select the surface and manipulate it without changing the opposite side. I had to take things slow, and carefully adjust the sections I wanted until the sphere looked pumpkin-like. To create the stem, I used the style tool to create a curve that resembled a pumpkin stem and created a sweep along the curve. The shape of the sweep is a star, I thought it resembled a stem more than a perfect circle. I used a <a href="https://en.wikipedia.org/wiki/Calavera" target="_blank">calavera</a> image to create the sketch that would become the face of the Jack-O-Lantern. A shoutout to Mexican culture, which I find super beautiful.</p>
+        <p>I was experimenting with flexible/free modeling for this project. I played around with adjusting the
+            resolution of the surface to manipulate the model in different ways. In the beginning, it was difficult to
+            select the surface and manipulate it without changing the opposite side. I had to take things slow, and
+            carefully adjust the sections I wanted until the sphere looked pumpkin-like. To create the stem, I used the
+            style tool to create a curve that resembled a pumpkin stem and created a sweep along the curve. The shape of
+            the sweep is a star, I thought it resembled a stem more than a perfect circle. I used a <a
+                href="https://en.wikipedia.org/wiki/Calavera" target="_blank">calavera</a> image to create the sketch
+            that would become the face of the Jack-O-Lantern. A shoutout to Mexican culture, which I find super
+            beautiful.</p>
 
         <div class="w3-row">
             <div class="row">
@@ -241,9 +270,16 @@
         <br>
 
         <h3 class="w3-center" style="font-size: xx-large;"><b>SLIDER</b></h3>
-        <p class="w3-center"><em>It's electric.</em></p>
+        <p class="w3-center"></p>
 
-        <p>The slider game was a fun project to explore some in depth functionality of Creo. I played around with part repetition which allowed me to repeat a single part instead of creating 9 separate tile parts. This project also taught me about defining part behavior by enabling push upon collision to prevent the tiles from overlapping when moving them around the base. I used the boolean operation to cut the lightning bolt out of the tiles. I chose a lightning bolt for the image because, well, <a href="https://www.youtube.com/watch?v=5jBkoEM0SSE" target="_blank">you know</a>. This is the first project I've made that will be brought to life. I'll be using a laser cutter to create this wooden slider game!</p>
+        <p>The slider game was a fun project to explore some in depth functionality of Creo. I played around with part
+            repetition which allowed me to repeat a single part instead of creating 9 separate tile parts. This project
+            also taught me about defining part behavior by enabling push upon collision to prevent the tiles from
+            overlapping when moving them around the base. I used the boolean operation to cut the lightning bolt out of
+            the tiles. I chose a lightning bolt for the image because, well, <a
+                href="https://www.youtube.com/watch?v=5jBkoEM0SSE" target="_blank">you know</a>. This is the first
+            project I've made that will be brought to life. I'll be using a laser cutter to create this wooden slider
+            game!</p>
 
         <div class="w3-row">
             <div class="row">
@@ -269,10 +305,12 @@
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-        <a href="files/resume.pdf" target="_blank" class="w3-button w3-light-grey"><i class="w3-margin-center"></i>My Resume</a>
+        <a href="files/resume.pdf" target="_blank" class="w3-button w3-light-grey"><i class="w3-margin-center"></i>Resumè</a>
         <div class="w3-xlarge w3-section">
-            <a href="https://www.instagram.com/hellomelissarodriguez/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-            <a href="https://twitter.com/hellomelissarod" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/hellomelissarodriguez/" target="_blank"><i
+                    class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/hellomelissarod" target="_blank"><i
+                    class="fa fa-twitter w3-hover-opacity"></i></a>
         </div>
         <p>hello@melissa-rodriguez.com</p>
     </footer>
